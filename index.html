@@ -2,15 +2,26 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Интерактивная карта реализованных проектов SpeedWash. Выберите регион, чтобы посмотреть кейсы робот-моек.">
-  <title>Карта проектов SpeedWash</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Сайты, инструменты и решения SpeedWash. Каталог проектов.">
+  <title>Проекты SpeedWash</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%23fe6219'/%3E%3Ctext x='20' y='28' text-anchor='middle' font-size='28' fill='white' font-family='Arial'%3Es%3C/text%3E%3C/svg%3E">
-  <style>body{margin:0;background:#fff} .demo-header{max-width:1440px;box-sizing:border-box;margin:auto;padding:25px 32px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #eee;font-family:Arial,sans-serif}.demo-brand{font-size:22px;font-weight:700;font-style:italic;color:#fe6219;text-decoration:none;letter-spacing:-1px}.demo-brand span{color:#262662}.demo-link{font-size:12px;color:#737373;text-decoration:none}@media(max-width:480px){.demo-header{padding:20px 16px}.demo-link{font-size:10px}}</style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap">
+  <style>
+    *{box-sizing:border-box}body{margin:0;color:#222;background:#fafaf8;font-family:Manrope,Arial,sans-serif}a{color:inherit;text-decoration:none}a:focus-visible{outline:3px solid #fe6219;outline-offset:5px}header{max-width:1200px;margin:auto;padding:28px 32px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #e7e7e5}.brand{font-size:23px;font-weight:700;font-style:italic;color:#fe6219;letter-spacing:-1px}.brand span{color:#262662}.repo{font-size:12px;color:#737373}main{max-width:1200px;margin:auto;padding:80px 32px 64px}.kicker{font-size:10px;font-weight:700;letter-spacing:1.6px;margin-bottom:24px}.kicker:before{content:'';display:inline-block;width:7px;height:7px;background:#fe6219;border-radius:50%;margin-right:10px}h1{font-weight:500;font-size:clamp(38px,6vw,68px);line-height:1.1;letter-spacing:-2.8px;margin:0}h1 span{color:#fe6219}.intro{font-size:15px;line-height:1.8;color:#737373;margin:22px 0 45px;max-width:540px}.project{max-width:760px;background:#fff;border:1px solid #e7e7e5;border-radius:24px;padding:30px;display:flex;align-items:flex-start;gap:24px}.icon{flex-shrink:0;display:grid;place-items:center;width:74px;height:74px;border-radius:18px;background:#fff0e8;color:#fe6219}.icon svg{width:36px;height:36px}.label{font-size:9px;font-weight:700;letter-spacing:1px;color:#8d8d8d;text-transform:uppercase}h2{font-weight:600;font-size:25px;letter-spacing:-.7px;margin:10px 0}.project p{font-size:13px;line-height:1.8;color:#737373;margin:0;max-width:470px}.actions{display:flex;flex-wrap:wrap;align-items:center;gap:20px;margin-top:24px}.primary{display:inline-block;background:#fe6219;color:#fff;font-size:12px;font-weight:600;padding:13px 20px;border-radius:999px;transition:background .2s}.primary:hover{background:#e5510c}.secondary{font-size:11px;color:#737373;text-decoration:underline;text-underline-offset:3px}footer{max-width:1200px;margin:auto;padding:0 32px 30px;font-size:11px;color:#999}@media(max-width:600px){header{padding:22px 20px}main{padding:48px 20px}.repo{font-size:10px}h1{letter-spacing:-1.6px}.intro{font-size:13px;margin-bottom:30px}.project{padding:23px;display:block}.icon{width:56px;height:56px;margin-bottom:20px}.icon svg{width:28px;height:28px}h2{font-size:23px}.project p{font-size:12px}.actions{gap:16px}footer{padding:0 20px 25px}}
+  </style>
 </head>
 <body>
-  <header class="demo-header"><a class="demo-brand" href="https://speedwash.ru" target="_blank" rel="noopener noreferrer">speed<span>wash</span></a><a class="demo-link" href="https://speedwash.ru/cases" target="_blank" rel="noopener noreferrer">Реализованные проекты ↗</a></header>
-  <div data-speedwash-map></div>
-  <script defer src="./speedwash-map.js"></script>
+  <header><a class="brand" href="https://speedwash.ru" target="_blank" rel="noopener noreferrer">speed<span>wash</span></a><a class="repo" href="https://github.com/pvchernev/speedwash" target="_blank" rel="noopener noreferrer">Репозиторий GitHub ↗</a></header>
+  <main>
+    <div class="kicker">ПРОЕКТЫ SPEEDWASH</div>
+    <h1>Решения для сайта.<br><span>В одном месте.</span></h1>
+    <p class="intro">Сайты, инструменты и виджеты SpeedWash.<br>Выберите проект, чтобы посмотреть его в работе.</p>
+    <article class="project">
+      <div class="icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m5 10 10-4 10 4 10-4v25l-10 4-10-4-10 4zM15 6v25m10-21v25"/><circle cx="25" cy="18" r="4" fill="#fff0e8"/><path d="m25 22 0 5"/></svg></div>
+      <div><div class="label">Интерактивный блок</div><h2>Карта кейсов</h2><p>Реализованные проекты по регионам. Фотографии, адреса, поиск и фильтры по модели робот-мойки.</p><div class="actions"><a class="primary" href="./projects/cases-map/">Открыть карту ↗</a><a class="secondary" href="https://github.com/pvchernev/speedwash/tree/main/projects/cases-map" target="_blank" rel="noopener noreferrer">Код и инструкция</a></div></div>
+    </article>
+  </main>
+  <footer>SpeedWash · Каталог проектов</footer>
 </body>
 </html>
