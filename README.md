@@ -9,6 +9,7 @@
 | Проект | Описание | Ссылки |
 | --- | --- | --- |
 | `projects/cases-map/` | Интерактивная карта кейсов: выбор региона, поиск, модели робот-моек и карточки объектов | [Демо](https://pvchernev.github.io/speedwash/projects/cases-map/) · [Инструкция](projects/cases-map/README.md) · [Код для Тильды](projects/cases-map/tilda-embed.html) |
+| `projects/winter-gates-video/` | Видео о направляющей зимних ворот: превью и вертикальный MP4 в поп-апе | [Демо](https://pvchernev.github.io/speedwash/projects/winter-gates-video/) · [Инструкция](projects/winter-gates-video/README.md) |
 
 ## Структура
 

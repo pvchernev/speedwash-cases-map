@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>Видео о направляющей зимних ворот — SpeedWash</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; color: #222; background: #fff; font-family: Manrope,Arial,sans-serif; }
+    main { max-width: 967px; margin: 60px auto; padding: 0 32px; }
+    h1 { max-width: 551px; margin: 0 0 32px; font-size: 32px; font-weight: 400; line-height: 1.4; }
+    .card { max-width: 446px; margin: 0 auto 48px; overflow: hidden; border-radius: 16px; background: #fafafa; }
+    .preview { position: relative; display: block; aspect-ratio: 446/260; }
+    .cover { display: block; width: 100%; height: 100%; object-fit: cover; }
+    .play { position: absolute; width: 56px; height: 56px; inset: 0; margin: auto; }
+    .duration { position: absolute; right: 12px; bottom: 12px; padding: 4px 7px; border-radius: 5px; background: rgba(0,0,0,.72); color: #fff; font-size: 12px; font-weight: 500; }
+    .copy { display: grid; gap: 14px; padding: 20px 30px 30px; }
+    h2 { margin: 0; font-size: 16px; font-weight: 500; line-height: 1.4; }
+    p { margin: 0; font-size: 14px; line-height: 1.4; color: #393939; }
+    .heating { display: flex; align-items: center; gap: 28px; min-height: 300px; padding: 32px; border-radius: 16px; background: #f5f5f5; }
+    .heating-copy { flex: 1; display: grid; gap: 12px; }
+    .heating h2 { font-size: 18px; }
+    .heating img { width: 42.5%; height: auto; }
+    .preview:focus-visible { outline: 3px solid #fe6219; outline-offset: -4px; }
+    @media(max-width:640px) {
+      main { margin: 36px auto; padding: 0 20px; } h1 { font-size: 26px; }
+      .copy { padding: 20px; } .heating { flex-direction: column; align-items: stretch; padding: 24px; }
+      .heating img { width: 100%; max-width: 356px; align-self: center; }
+    }
+  </style>
+  <script defer src="winter-gates-video.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Зимние ПВХ ворота: направляющая и греющий кабель</h1>
+    <article class="card">
+      <a class="preview" href="#sw-winter-video">
+        <img class="cover" src="assets/preview.png" alt="Роликовый механизм и белый греющий кабель">
+        <img class="play" src="assets/play.svg" alt="">
+        <span class="duration">0:26</span>
+      </a>
+      <div class="copy">
+        <h2>Надёжность в условиях влаги и мороза</h2>
+        <p>Зимние ПВХ-ворота устойчивы к воде и не боятся наледи: лед легко удаляется с поверхности, не происходит примерзания нижнего края. Конструкция лишена подвижных элементов, которые ломаются на морозе (ролики, тросы, пружины). Это обеспечивает стабильную работу даже в суровых зимних условиях.</p>
+      </div>
+    </article>
+    <article class="heating">
+      <div class="heating-copy">
+        <h2>Обогрев направляющих и электропривода</h2>
+        <p>Предотвращает обледенение металлических частей. Направляющая устанавливается через теплоизоляционную прокладку, а все металлические элементы примыкают к стене через теплоизолятор.</p>
+      </div>
+      <img src="assets/heating-mechanism.png" alt="Направляющая с четырьмя роликами, теплоизолятором и белым греющим кабелем">
+    </article>
+  </main>
+</body>
+</html>
