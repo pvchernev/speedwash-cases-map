@@ -11,7 +11,7 @@
 Для поведения поп-апа добавлен один служебный HTML-элемент 1×1 px со скриптом:
 
 ```html
-<script defer src="https://pvchernev.github.io/speedwash/projects/winter-gates-video/winter-gates-video.js?v=1"></script>
+<script defer src="https://pvchernev.github.io/speedwash/projects/winter-gates-video/winter-gates-video.js?v=2"></script>
 ```
 
 Скрипт создаёт native `dialog` только при первом открытии. Ролик не загружается до клика. В плеере доступны звук, перемотка и полноэкранный режим. Закрытие работает по крестику, фону и Esc; воспроизведение останавливается, фокус возвращается на превью.

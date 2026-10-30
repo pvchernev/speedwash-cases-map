@@ -99,7 +99,7 @@
       closePlayer();
     });
     dialog.addEventListener('close', () => {
-      if (!dialog.open) releasePlayer();
+      if (!dialog.open) restoreFocus(releasePlayer());
     });
   }
 
@@ -112,14 +112,20 @@
       document.body.style.paddingRight = bodyStyles.paddingRight;
       bodyStyles = null;
     }
-    if (returnFocus && returnFocus.isConnected) returnFocus.focus({ preventScroll: true });
+    const target = returnFocus;
     returnFocus = null;
+    return target;
+  }
+
+  function restoreFocus(target) {
+    if (target && target.isConnected) target.focus({ preventScroll: true });
   }
 
   function closePlayer() {
     if (!dialog || !dialog.open) return;
-    releasePlayer();
+    const target = releasePlayer();
     dialog.close();
+    restoreFocus(target);
   }
 
   function openPlayer(trigger) {
@@ -157,6 +163,15 @@
     event.preventDefault();
     event.stopPropagation();
     openPlayer(trigger);
+  }, true);
+
+  // Tilda and other page widgets may cancel the browser's default Escape action.
+  // Handle it before document listeners, and only while this player is open.
+  window.addEventListener('keydown', event => {
+    if (event.key !== 'Escape' || !dialog || !dialog.open) return;
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    closePlayer();
   }, true);
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', labelTriggers);
